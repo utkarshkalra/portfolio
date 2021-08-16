@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import { RiContactsFill } from "react-icons/ri";
 import { FaPen } from "react-icons/fa";
@@ -7,6 +6,7 @@ const NavBar = () => {
   const [linkNumber, setLinkNumber] = useState(1);
   useEffect(() => {
     if (window.location.pathname === "/about") setLinkNumber(2);
+    else if (window.location.pathname === "/") setLinkNumber(1);
   }, []);
   return (
     <nav className="nav-bar">
@@ -15,16 +15,16 @@ const NavBar = () => {
       </div>
       <ul>
         <li>
-          <Link
-            to="/"
-            className={linkNumber === 1 ? "active" : "notactive"}
+          <a
+            href="/#"
             onClick={() => setLinkNumber(1)}
+            className={linkNumber === 1 ? "active" : "notactive"}
           >
             <i className={linkNumber === 1 ? "activei" : "notactivei"}>
               <AiFillHome />{" "}
             </i>
             HOME
-          </Link>
+          </a>
         </li>
 
         <li>
@@ -52,7 +52,11 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <a rel="noopener noreferrer" href="https://medium.com/@utkarshkalra" target="_blank">
+          <a
+            rel="noopener noreferrer"
+            href="https://medium.com/@utkarshkalra"
+            target="_blank"
+          >
             <i>
               <FaPen />
             </i>
