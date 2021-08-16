@@ -19,7 +19,7 @@ const ProjectArea = () => {
                 ></img>
               </div>
               <div className="details">
-                <a href={link} target="_blank">
+                <a rel="noopener noreferrer" href={link} target="_blank">
                   <h2>
                     {name}
                     <i id="show" className="fas fa-external-link-alt"></i>

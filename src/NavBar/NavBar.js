@@ -52,7 +52,7 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <a href="https://medium.com/@utkarshkalra" target="_blank">
+          <a rel="noopener noreferrer" href="https://medium.com/@utkarshkalra" target="_blank">
             <i>
               <FaPen />
             </i>
