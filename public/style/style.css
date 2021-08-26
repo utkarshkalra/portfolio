@@ -246,10 +246,16 @@ a.active {
 .details > a:hover {
   color: var(--accentcolor);
 }
-i#show {
-  display: inline !important;
+
+h2#showh2 {
+  display: flex;
+  align-items: center;
+}
+#show {
+  /* display: inline !important; */
   color: var(--accentcolor);
   font-size: 1.5rem !important;
+  margin-left: 5px;
 }
 .project > .tech {
   flex: 0 0 50px;

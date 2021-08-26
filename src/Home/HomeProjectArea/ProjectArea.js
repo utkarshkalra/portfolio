@@ -1,4 +1,5 @@
 import projects from "./projects";
+import { BiLinkExternal } from "react-icons/bi";
 const ProjectArea = () => {
   return (
     <main class="projectarea">
@@ -20,9 +21,9 @@ const ProjectArea = () => {
               </div>
               <div className="details">
                 <a rel="noopener noreferrer" href={link} target="_blank">
-                  <h2>
+                  <h2 id="showh2">
                     {name}
-                    <i id="show" className="fas fa-external-link-alt"></i>
+                    <BiLinkExternal id="show" />
                   </h2>
                 </a>
                 <p>{desc}</p>
