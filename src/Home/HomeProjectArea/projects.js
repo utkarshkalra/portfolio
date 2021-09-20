@@ -59,16 +59,9 @@ export default [
   {
     id: 5,
     name: "Mongodb Documentation",
-    link: "https://utkarshkalra.github.io/anime-weeb/",
-    image: "anime_weeb",
-    techStack: [
-      "NodeJs",
-      "MongoDB",
-      "HTML5",
-      "Bootstrap",
-      "Javascript",
-      "Heroku",
-    ],
-    desc: "A Website to help new Anime viewers in finding good quality Animes and where to Watch them",
+    link: "https://utkarshkalra.github.io/freecodecamp_Certification/Documentation/",
+    image: "mongodb_documentation",
+    techStack: ["HTML5", "CSS", "Javascript"],
+    desc: "A documentation website for mongoDB. Created for a quick recap of the concepts.",
   },
 ];
