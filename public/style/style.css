@@ -3,6 +3,7 @@
   --color1light: rgb(220, 220, 220);
   --color2: black;
   --color2light: rgb(25, 25, 25);
+  --color3light: rgba(238, 238, 238, 0.85);
   --accentcolor: #5badb5;
 
   --defaultfont: "Open Sans", sans-serif;
@@ -32,7 +33,6 @@ body {
   bottom: 50px;
   right: 70px;
   z-index: 99;
-
   border: none;
   outline: none;
   background: transparent;
@@ -46,9 +46,15 @@ body {
   border-width: 0 5px 5px 0;
   display: inline-block !important;
 }
+
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
 
 hr {
@@ -102,6 +108,7 @@ img {
   display: flex;
   height: 13vmin;
   align-items: center;
+  z-index: 1024;
 }
 
 .nav-bar > .logo {
@@ -159,9 +166,9 @@ a.active {
   width: 100%;
   background-color: var(--color2);
   color: var(--color1);
-  height: 72vh;
+  height: 70vh;
   display: flex;
-  padding: 0 20vmin 7vmin 20vmin;
+  padding: 0 20vmin 0vmin 20vmin;
 }
 
 .aboutmyself > .left {
@@ -192,6 +199,121 @@ a.active {
   color: var(--accentcolor);
   margin: unset;
   padding: unset;
+}
+
+.down-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#mybtn2 {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  width: 50px;
+  margin: auto;
+  margin-bottom: 25vmin;
+}
+
+#mybtn2 .down {
+  width: 50px;
+  height: 50px;
+  border: solid var(--accentcolor);
+  border-width: 0 5px 5px 0;
+  display: inline-block !important;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.experience-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+}
+.experience-area h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.experience {
+  display: flex;
+  align-items: start;
+  border-left: 2px solid white;
+}
+.experience .ladder {
+  min-height: 6vmin;
+  min-width: 6vmin;
+  position: relative;
+  margin-top: 2.5vmin;
+}
+
+.experience .ladder::after {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--accentcolor);
+  color: var(--accentcolor);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.experience .ladder::before {
+  width: 50%;
+  height: 50%;
+  content: "";
+  position: absolute;
+
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid var(--accentcolor);
+  background: none;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.experience .details {
+  margin: 3vmin 0;
+  position: relative;
+}
+
+.experience .top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience .company-name {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.experience .duration {
+  font-size: 0.85rem;
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: var(--accentcolor);
+  color: var(--color3light);
+}
+
+.experience .position {
+  color: var(--accentcolor);
+  padding: 5px 0;
+}
+
+.experience .description li {
+  list-style: none;
+  font-family: var(--defaultfont);
+  padding-left: 20px;
+  font-size: 0.85rem;
+}
+
+.wrapper hr {
+  margin-top: 10vmin;
 }
 
 .projectarea {
@@ -361,7 +483,10 @@ footer > .footeritems {
   text-decoration-thickness: 2.5px;
 }
 
-/* --------------MEDIA QUERY----------------- */
+/* --------------------------------------MEDIA QUERY-------------------------------------------------------------------------------- */
+
+/*---------------------------------  728px--------------------------------- */
+
 @media only screen and (max-width: 728px) {
   html,
   body {
@@ -434,7 +559,7 @@ footer > .footeritems {
   }
   .aboutmyself {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 75vh;
     padding: 0;
     justify-content: center;
   }
@@ -454,6 +579,20 @@ footer > .footeritems {
   }
   .aboutmyself > .right > img {
     width: 60%;
+  }
+
+  .experience-area {
+    flex-direction: column;
+  }
+
+  .experience-area h1 {
+    text-align: center;
+  }
+
+  .experience .top {
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 15px;
   }
 
   .projectarea {
@@ -556,7 +695,11 @@ footer > .footeritems {
     margin-bottom: 5vmin;
   }
 }
+
 /* --------------MEDIA QUERY----------------- */
+
+/*---------------------------------  728px - 960 px --------------------------------- */
+
 @media only screen and (min-width: 729px) and (max-width: 960px) {
   .nav-bar > .logo {
     min-width: 40% !important;
@@ -652,6 +795,9 @@ footer > .footeritems {
     font-size: small;
   }
 }
+
+/*---------------------------------  729px - 1100 px --------------------------------- */
+
 @media only screen and (min-width: 729px) and (max-width: 1100px) {
   #myBtn {
     bottom: 48px;

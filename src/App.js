@@ -3,8 +3,24 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import NavBar from "./NavBar/NavBar";
 import About from "./About/About";
+import { useState } from "react";
 
 function App() {
+  const [showUpButton, setShowUpButton] = useState(false);
+  window.addEventListener("scroll", scrollFunction);
+
+  function scrollFunction() {
+    console.log("Scrolling");
+
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 100
+    ) {
+      setShowUpButton(true);
+    } else {
+      setShowUpButton(false);
+    }
+  }
   return (
     <>
       <Router>
@@ -16,6 +32,16 @@ function App() {
           <Route path="/about" component={About} />
         </Switch>
         <Footer />
+        <button
+          id="myBtn"
+          style={{ display: `${showUpButton ? "block" : "none"}` }}
+          onClick={() => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }}
+        >
+          <i class="arrow up"></i>
+        </button>
       </Router>
     </>
   );

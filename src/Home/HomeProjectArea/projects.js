@@ -1,9 +1,26 @@
 export default [
   {
     id: 1,
+    name: `P2P Tic Tac Toe`,
+    link: "https://p2p-tic-tac-toe.netlify.app/",
+    image: "p2p_tic_tac_toe",
+    techStack: [
+      "ReactJs",
+      "Socket.io",
+      "NodeJs",
+      "MongoDB",
+      "HTML5",
+      "CSS",
+      "Javascript",
+      "Heroku",
+    ],
+    desc: "It is a multiplayer Tic-Tac-Toe game that can played offline (vs computer) or online (vs another player)",
+  },
+  {
+    id: 2,
     name: `Memories App`,
     link: "https://uk-memories-app.netlify.app/",
-    image: "img/memories.png",
+    image: "memories",
     techStack: [
       "ReactJs",
       "NodeJs",
@@ -15,12 +32,19 @@ export default [
     ],
     desc: "A scalable Full Stack Web App which performs all CRUD operations stores data in a database via API call to the server",
   },
-
   {
-    id: 2,
+    id: 3,
+    name: `Basic Front-end based SQL Editor`,
+    link: "https://react-sql-editor.netlify.app/",
+    image: "sql_editor",
+    techStack: ["ReactJs", "HTML5", "Javascript", "CSS"],
+    desc: "A scalable Full Stack Web App which performs all CRUD operations stores data in a database via API call to the server",
+  },
+  {
+    id: 4,
     name: "Anime Weeb",
     link: "https://utkarshkalra.github.io/anime-weeb/",
-    image: "img/anime-weeb.png",
+    image: "anime_weeb",
     techStack: [
       "NodeJs",
       "MongoDB",
@@ -33,28 +57,18 @@ export default [
   },
 
   {
-    id: 3,
-    name: "Playing with APIs",
-    link: "https://utkarshkalra.github.io/connect-two-api/",
-    image: "img/randomapi.png",
-    techStack: ["RestAPI", "HTML5", "CSS3", "Javascript"],
-    desc: "A Web app connecting TWO APIs to Produce desire Results",
-  },
-
-  {
-    id: 4,
-    name: "Today's Advice",
-    link: "https://utkarshkalra.github.io/advice/",
-    image: "img/advice.png",
-    techStack: ["RestAPI", "HTML5", "CSS3", "Javascript"],
-    desc: "Get a Quote for the Day and apply it to your daily Life to improve",
-  },
-  {
     id: 5,
-    name: "Javascript Drumkit",
-    link: "https://utkarshkalra.github.io/musical/",
-    image: "img/drumkit.png",
-    techStack: ["HTML5", "CSS3", "Javascript"],
-    desc: "As the name suggest a basic DrumKit created Using basic Javascript so go ahead and play some beats",
+    name: "Mongodb Documentation",
+    link: "https://utkarshkalra.github.io/anime-weeb/",
+    image: "anime_weeb",
+    techStack: [
+      "NodeJs",
+      "MongoDB",
+      "HTML5",
+      "Bootstrap",
+      "Javascript",
+      "Heroku",
+    ],
+    desc: "A Website to help new Anime viewers in finding good quality Animes and where to Watch them",
   },
 ];

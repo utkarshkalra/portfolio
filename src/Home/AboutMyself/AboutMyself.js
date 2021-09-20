@@ -9,7 +9,10 @@ const AboutMyself = () => {
         </h1>
       </div>
       <div className="right">
-        <img src="img/type1.png" alt="profileimage" />
+        <img
+          src="https://raw.githubusercontent.com/utkarshkalra/image/main/portfolio/type1.png"
+          alt="profileimage"
+        />
       </div>
     </div>
   );

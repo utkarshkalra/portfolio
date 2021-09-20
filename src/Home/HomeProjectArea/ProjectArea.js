@@ -2,7 +2,7 @@ import projects from "./projects";
 import { BiLinkExternal } from "react-icons/bi";
 const ProjectArea = () => {
   return (
-    <main class="projectarea">
+    <main className="projectarea">
       <h1>Projects</h1>
 
       <div class="projectwrap" id="test">
@@ -12,7 +12,7 @@ const ProjectArea = () => {
             <div className="project">
               <div className="image">
                 <img
-                  src={image}
+                  src={`https://raw.githubusercontent.com/utkarshkalra/image/main/portfolio/${image}.png`}
                   alt={name}
                   onclick={() => {
                     window.open("${link}", "_blank");
