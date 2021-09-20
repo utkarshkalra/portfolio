@@ -234,7 +234,7 @@ a.active {
 }
 .experience-area h1 {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 9vmin;
 }
 .experience {
   display: flex;

@@ -6,7 +6,12 @@ const Footer = () => {
         <h1>
           I'd love to build something <br />
           great with you,&nbsp;
-          <a rel="noopener noreferrer" href="mailto:utkarshkalra.2001@gmail.com">say hi</a>
+          <a
+            rel="noopener noreferrer"
+            href="mailto:utkarshkalra.2001@gmail.com"
+          >
+            say hi
+          </a>
         </h1>
       </div>
       <div className="footeritems">
@@ -34,15 +39,16 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="https://www.instagram.com/_utkarsh_kalra_/"
-                target="_blank"
-              >
-                Instagram
+              <a href="https://twitter.com/utkarsh_kalra_" target="_blank">
+                Twitter
               </a>
             </li>
             <li>
-              <a rel="noopener noreferrer" href="https://github.com/utkarshkalra" target="_blank">
+              <a
+                rel="noopener noreferrer"
+                href="https://github.com/utkarshkalra"
+                target="_blank"
+              >
                 Github
               </a>
             </li>
