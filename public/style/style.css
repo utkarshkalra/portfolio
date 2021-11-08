@@ -114,6 +114,11 @@ img {
 .nav-bar > .logo {
   min-width: 42%;
   padding-left: 10vw;
+  max-width: 42%;
+}
+
+.nav-bar > .logo > img {
+  width: 50%;
 }
 .nav-bar > .logo > h1 {
   font-size: 38px;

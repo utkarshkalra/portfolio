@@ -2,6 +2,7 @@ import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import { RiContactsFill } from "react-icons/ri";
 import { FaPen } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import logo from "./utkarsh.svg";
 const NavBar = () => {
   const [linkNumber, setLinkNumber] = useState(1);
   useEffect(() => {
@@ -11,7 +12,8 @@ const NavBar = () => {
   return (
     <nav className="nav-bar">
       <div className="logo">
-        <h1>Utkarsh</h1>
+        {/* <h1>Utkarsh</h1> */}
+        <img src={logo} alt="utkarsh" />
       </div>
       <ul>
         <li>

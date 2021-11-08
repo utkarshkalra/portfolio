@@ -10,7 +10,7 @@ function App() {
   window.addEventListener("scroll", scrollFunction);
 
   function scrollFunction() {
-    console.log("Scrolling");
+    // console.log("Scrolling");
 
     if (
       document.body.scrollTop > 100 ||
