@@ -43,7 +43,7 @@ const Experience = () => {
                       <p>{exp.name + ","}&nbsp;</p>
                       <p className="location">{exp.location}</p>
 
-                      <BiLinkExternal id="show" />
+                      {/* <BiLinkExternal id="show" /> */}
                     </div>
 
                     <p className="position">{exp.position}</p>
