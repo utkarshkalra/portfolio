@@ -437,6 +437,9 @@ h2#showh2 {
   margin-right: 1rem;
 }
 
+footer {
+  margin-bottom: 2rem;
+}
 footer#contact > hr {
   margin-top: 3rem;
 }
