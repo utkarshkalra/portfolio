@@ -13,6 +13,18 @@ const experienceList = [
       "worked in an Agile Scrum Development Environment",
     ],
   },
+  {
+    name: "Viplus",
+    location: "Manesar",
+    position: "Freelance Web Developer",
+    duration: "Oct 2021 - Dec 2021",
+    description: [
+      "Designed and Developed an eCommerce website as well as its admin panel by using React and Nodejs.",
+      "Created database using MongoDB.",
+      "Implemented maps from scratch that shows the establishments in a city using appropriate colors and labels",
+      "I was responsible for creating all the models, routes, views and controllers needed for functionality.",
+    ],
+  },
 ];
 
 const Experience = () => {
