@@ -9,7 +9,7 @@ const ProjectArea = () => {
         {projects.map((project) => {
           const { id, name, link, image, techStack, desc } = project;
           return (
-            <div className="project">
+            <div className="project" key={id}>
               <div className="image">
                 <img
                   src={`https://raw.githubusercontent.com/utkarshkalra/image/main/portfolio/${image}.png`}
