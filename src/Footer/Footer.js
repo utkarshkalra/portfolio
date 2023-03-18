@@ -18,13 +18,22 @@ const Footer = () => {
         <div className="footeritem">
           <h2>Copyright</h2>
           <ul>
-            <li>© 2021 Utkarsh Kalra</li>
+            <li>© 2023 Utkarsh Kalra</li>
           </ul>
         </div>
         <div className="footeritem">
           <h2>Contact</h2>
           <ul>
-            <li>utkarshkalra.2001@gmail.com</li>
+            <li>
+              {" "}
+              <a
+                href="mailto:utkarshkalra.2001@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                utkarshkalra.2001@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
         <div className="footeritem">
@@ -34,12 +43,17 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/utkarshkalra/"
                 target="_blank"
+                rel="noreferrer"
               >
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/utkarsh_kalra_" target="_blank">
+              <a
+                href="https://twitter.com/utkarshxkalra"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Twitter
               </a>
             </li>

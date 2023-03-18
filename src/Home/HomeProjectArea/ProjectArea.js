@@ -14,9 +14,6 @@ const ProjectArea = () => {
                 <img
                   src={`https://raw.githubusercontent.com/utkarshkalra/image/main/portfolio/${image}.png`}
                   alt={name}
-                  onclick={() => {
-                    window.open("${link}", "_blank");
-                  }}
                 ></img>
               </div>
               <div className="details">
