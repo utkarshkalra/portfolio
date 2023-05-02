@@ -1,15 +1,16 @@
 import projects from "./projects";
 import { BiLinkExternal } from "react-icons/bi";
+import { randomNumber } from "../../Utility/keyGenerator";
 const ProjectArea = () => {
   return (
     <main className="projectarea">
       <h1>Projects</h1>
 
-      <div class="projectwrap" id="test">
+      <div className="projectwrap" id="test">
         {projects.map((project) => {
           const { id, name, link, image, techStack, desc } = project;
           return (
-            <div className="project" key={id}>
+            <div className="project" key={randomNumber(id)}>
               <div className="image">
                 <img
                   src={`https://raw.githubusercontent.com/utkarshkalra/image/main/portfolio/${image}.png`}
@@ -28,8 +29,8 @@ const ProjectArea = () => {
               <br></br>
               <div className="tech">
                 <h3>Tech Stack:</h3>
-                {techStack.map((name) => {
-                  return <span>{name}</span>;
+                {techStack.map((name, index) => {
+                  return <span key={randomNumber(index)}>{name}</span>;
                 })}
               </div>
             </div>

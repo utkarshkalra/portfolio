@@ -24,7 +24,7 @@ body {
   color: var(--color1);
 
   background-color: var(--color2);
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
 }
 
 #myBtn {
@@ -409,11 +409,20 @@ h2#showh2 {
   justify-content: space-between;
   width: 75%;
 }
-.skillset > ul {
+.skillset > div {
   font-size: 1.2rem;
   font-family: var(--defaultfont);
+  margin-bottom: 30px;
 }
-.skillset > ul > li {
+.skillset ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillset span {
+  border-color: var(--accentcolor);
+}
+
+.skillset ul > li {
   margin-top: 10px;
   list-style: none;
   font-size: small;
@@ -652,11 +661,11 @@ footer > .footeritems {
     margin-top: 3rem;
     font-size: 2rem;
   }
-  .skillset > ul {
+  .skillset > div {
     font-size: 1.7rem;
     margin-bottom: 2rem;
   }
-  .skillset > ul > li {
+  .skillset ul > li {
     margin-top: 10px;
     list-style: none;
     font-size: small;
@@ -760,11 +769,11 @@ footer > .footeritems {
     margin-top: 3rem;
     font-size: 2rem;
   }
-  .skillset > ul {
+  .skillset > div {
     font-size: 1.7rem;
     margin-bottom: 2rem;
   }
-  .skillset > ul > li {
+  .skillset ul > li {
     margin-top: 10px;
     list-style: none;
     font-size: small;
@@ -880,12 +889,13 @@ footer > .footeritems {
     flex-direction: column;
     justify-content: space-between;
   }
-  .skillset > ul {
+  .skillset > div {
     font-size: 1.2rem;
     font-family: var(--defaultfont);
     margin-bottom: 1.1rem;
   }
-  .skillset > ul > li {
+
+  .skillset ul > li {
     margin-top: 8px;
     list-style: none;
     font-size: small;

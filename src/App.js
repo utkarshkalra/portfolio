@@ -1,8 +1,7 @@
 import Home from "./Home/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import NavBar from "./NavBar/NavBar";
-import About from "./About/About";
 import { useState } from "react";
 
 function App() {
@@ -23,7 +22,20 @@ function App() {
   }
   return (
     <>
-      <Router>
+      <NavBar />
+      <Home />
+      <Footer />
+      <button
+        id="myBtn"
+        style={{ display: `${showUpButton ? "block" : "none"}` }}
+        onClick={() => {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }}
+      >
+        <i className="arrow up"></i>
+      </button>
+      {/* <Router>
         <NavBar />
 
         <Switch>
@@ -40,9 +52,9 @@ function App() {
             document.documentElement.scrollTop = 0;
           }}
         >
-          <i class="arrow up"></i>
+          <i className="arrow up"></i>
         </button>
-      </Router>
+      </Router> */}
     </>
   );
 }

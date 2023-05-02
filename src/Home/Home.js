@@ -1,6 +1,7 @@
 import AboutMyself from "./AboutMyself/AboutMyself";
 import ProjectArea from "./HomeProjectArea/ProjectArea";
 import Experience from "./Experience/Experience";
+import About from "../About/About";
 function Home() {
   return (
     <>
@@ -18,6 +19,7 @@ function Home() {
         <Experience />
         <hr />
         <ProjectArea />
+        <About />
       </div>
     </>
   );

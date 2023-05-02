@@ -1,14 +1,14 @@
 import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import { RiContactsFill } from "react-icons/ri";
 import { FaPen } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import logo from "./utkarsh.svg";
 const NavBar = () => {
   const [linkNumber, setLinkNumber] = useState(1);
-  useEffect(() => {
-    if (window.location.pathname === "/about") setLinkNumber(2);
-    else if (window.location.pathname === "/") setLinkNumber(1);
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.pathname === "/about") setLinkNumber(2);
+  //   else if (window.location.pathname === "/") setLinkNumber(1);
+  // }, []);
   return (
     <nav className="nav-bar">
       <div className="logo">
@@ -31,7 +31,7 @@ const NavBar = () => {
 
         <li>
           <a
-            href="/about#about"
+            href="/#about"
             onClick={() => setLinkNumber(2)}
             className={linkNumber === 2 ? "active" : "notactive"}
           >

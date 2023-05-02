@@ -1,3 +1,4 @@
+import { randomNumber } from "../../Utility/keyGenerator";
 import { experienceList } from "./Jobs";
 
 const Experience = () => {
@@ -7,7 +8,7 @@ const Experience = () => {
       <div>
         {experienceList.map((exp, index) => {
           return (
-            exp.active == 1 && (
+            exp.active === 1 && (
               <div className="experience" key={index}>
                 <div className="ladder"></div>
                 <div className="details">
@@ -27,7 +28,7 @@ const Experience = () => {
 
                   <ul className="description">
                     {exp.description.map((d, i) => {
-                      return <li key={i}>{d}</li>;
+                      return <li key={randomNumber(i)}>{d}</li>;
                     })}
                   </ul>
                 </div>
