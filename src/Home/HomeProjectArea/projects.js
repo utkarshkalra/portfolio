@@ -1,8 +1,27 @@
-export default [
+let data = [
+  {
+    id: 0,
+    name: `E-commerce Website`,
+    link: "https://github.com/utkarshkalra/ecommerceWebsite",
+    image: "eccomerceWebsite",
+    techStack: [
+      "ReactJs",
+      "Redux",
+      "NodeJs",
+      "MongoDB",
+      "JWT Token",
+      "CSS",
+      "Cloudinary",
+      "Razorpay",
+    ],
+    desc: "This is an e-commerce platform specializing in cap sales. It offers login capabilities, a shopping cart, order tracking, an admin dashboard to oversee users and orders, a product management section to add, review, and remove items from the store. Additionally, it seamlessly integrates with Razorpay for secure online payments.",
+  },
+
   {
     id: 1,
     name: `P2P Tic Tac Toe`,
-    link: "https://p2p-tic-tac-toe.netlify.app/",
+    // link: "https://p2p-tic-tac-toe.netlify.app/",
+    link: "https://github.com/utkarshkalra/P2P-TicTacToe",
     image: "p2p_tic_tac_toe",
     techStack: [
       "ReactJs",
@@ -14,12 +33,13 @@ export default [
       "Javascript",
       "Heroku",
     ],
-    desc: "It is a multiplayer Tic-Tac-Toe game that can played offline (vs computer) or online (vs another player)",
+    desc: "It's a multiplayer Tic-Tac-Toe game playable both offline (against the computer) and online (against another player).",
   },
   {
     id: 2,
     name: `Memories App`,
-    link: "https://uk-memories-app.netlify.app/",
+    link: "https://github.com/utkarshkalra/memories-app",
+    // link: "https://uk-memories-app.netlify.app/",
     image: "memories",
     techStack: [
       "ReactJs",
@@ -30,31 +50,31 @@ export default [
       "Javascript",
       "Heroku",
     ],
-    desc: "A scalable Full Stack Web App which performs all CRUD operations stores data in a database via API call to the server",
+    desc: "It's a scalable Full Stack Web App that seamlessly handles all CRUD operations by storing data in a database through API calls to the server.",
   },
-  {
-    id: 3,
-    name: `Basic Front-end based SQL Editor`,
-    link: "https://react-sql-editor.netlify.app/",
-    image: "sql_editor",
-    techStack: ["ReactJs", "HTML5", "Javascript", "CSS"],
-    desc: "A scalable Full Stack Web App which performs all CRUD operations stores data in a database via API call to the server",
-  },
-  {
-    id: 4,
-    name: "Anime Weeb",
-    link: "https://utkarshkalra.github.io/anime-weeb/",
-    image: "anime_weeb",
-    techStack: [
-      "NodeJs",
-      "MongoDB",
-      "HTML5",
-      "Bootstrap",
-      "Javascript",
-      "Heroku",
-    ],
-    desc: "A Website to help new Anime viewers in finding good quality Animes and where to Watch them",
-  },
+  // {
+  //   id: 3,
+  //   name: `Basic Front-end based SQL Editor`,
+  //   link: "https://react-sql-editor.netlify.app/",
+  //   image: "sql_editor",
+  //   techStack: ["ReactJs", "HTML5", "Javascript", "CSS"],
+  //   desc: "It ",
+  // },
+  // {
+  //   id: 4,
+  //   name: "Anime Weeb",
+  //   link: "https://utkarshkalra.github.io/anime-weeb/",
+  //   image: "anime_weeb",
+  //   techStack: [
+  //     "NodeJs",
+  //     "MongoDB",
+  //     "HTML5",
+  //     "Bootstrap",
+  //     "Javascript",
+  //     "Heroku",
+  //   ],
+  //   desc: "A Website to help new Anime viewers in finding good quality Animes and where to Watch them",
+  // },
 
   {
     id: 5,
@@ -62,6 +82,17 @@ export default [
     link: "https://utkarshkalra.github.io/freecodecamp_Certification/Documentation/",
     image: "mongodb_documentation",
     techStack: ["HTML5", "CSS", "Javascript"],
-    desc: "A documentation website for mongoDB. Created for a quick recap of the concepts.",
+    desc: "It's a comprehensive documentation website tailored for MongoDB, offering in-depth resources, guides, and references to help users navigate and maximize their usage of the database system.",
+  },
+
+  {
+    id: 6,
+    name: "XYZ NGO",
+    link: "https://ngo-mockup.vercel.app/",
+    image: "ngo",
+    techStack: ["HTML5", "CSS", "Javascript"],
+    desc: "It's a mockup landing page designed for an NGO, showcasing their impactful work, contact information, and more, effectively highlighting their mission and initiatives..",
   },
 ];
+
+export default data;

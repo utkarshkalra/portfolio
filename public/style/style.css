@@ -316,6 +316,7 @@ a.active {
   font-family: var(--defaultfont);
   padding-left: 20px;
   font-size: 0.85rem;
+  margin-bottom: 9px;
 }
 
 .wrapper hr {
@@ -373,6 +374,11 @@ a.active {
 }
 .details > a:hover {
   color: var(--accentcolor);
+}
+
+.details > .tech {
+  padding-left: 20px;
+  margin-top: 20px;
 }
 
 h2#showh2 {

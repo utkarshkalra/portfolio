@@ -31,6 +31,12 @@ const Experience = () => {
                       return <li key={randomNumber(i)}>{d}</li>;
                     })}
                   </ul>
+                  <div className="tech">
+                    <h3>Tech Stack:</h3>
+                    {exp?.Stack?.map((name, index) => {
+                      return <span key={randomNumber(index)}>{name}</span>;
+                    })}
+                  </div>
                 </div>
               </div>
             )

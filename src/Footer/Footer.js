@@ -6,10 +6,7 @@ const Footer = () => {
         <h1>
           I'd love to build something <br />
           great with you,&nbsp;
-          <a
-            rel="noopener noreferrer"
-            href="mailto:utkarshkalra.2001@gmail.com"
-          >
+          <a rel="noopener noreferrer" href="mailto:utkarsh9kalra@gmail.com">
             say hi
           </a>
         </h1>
@@ -27,11 +24,11 @@ const Footer = () => {
             <li>
               {" "}
               <a
-                href="mailto:utkarshkalra.2001@gmail.com"
+                href="mailto:utkarsh9kalra@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
-                utkarshkalra.2001@gmail.com
+                utkarsh9kalra@gmail.com
               </a>
             </li>
           </ul>

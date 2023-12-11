@@ -1,4 +1,4 @@
-export default [
+let data = [
   {
     id: 3,
     name: "Playing with APIs",
@@ -25,3 +25,5 @@ export default [
     desc: "As the name suggest a basic DrumKit created Using basic Javascript so go ahead and play some beats",
   },
 ];
+
+export default data;
