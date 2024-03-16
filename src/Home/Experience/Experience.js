@@ -1,16 +1,20 @@
+import { useState } from "react";
 import { randomNumber } from "../../Utility/keyGenerator";
 import { experienceList } from "./Jobs";
 
 const Experience = () => {
+  const [isViewMore, setIsViewMore] = useState(false);
   return (
     <main className="experience-area" id="experience">
       <h1>Experience</h1>
       <div>
         {experienceList.map((exp, index) => {
           return (
-            exp.active === 1 && (
+            (exp.active === 1 || isViewMore) && (
               <div className="experience" key={index}>
-                <div className="ladder"></div>
+                <div
+                  className={`ladder ${exp.isCurrent ? "active" : ""}`}
+                ></div>
                 <div className="details">
                   <div className="top">
                     <div>
@@ -43,6 +47,10 @@ const Experience = () => {
           );
         })}
       </div>
+      <button className="viewmore" onClick={() => setIsViewMore(!isViewMore)}>
+        {" "}
+        {isViewMore ? "View less" : "View more"}{" "}
+      </button>
     </main>
   );
 };

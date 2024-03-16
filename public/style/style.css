@@ -141,7 +141,6 @@ img {
 .nav-bar > ul > li > a {
   display: inline-block;
   width: 100%;
-
   text-decoration: none;
   color: var(--color1);
   font-family: "Montserrat", sans-serif;
@@ -165,7 +164,7 @@ a.active {
 }
 .spacer {
   background-color: black;
-  height: 20vmin;
+  height: 18vmin;
 }
 .aboutmyself {
   width: 100%;
@@ -174,6 +173,12 @@ a.active {
   height: 70vh;
   display: flex;
   padding: 0 20vmin 0vmin 20vmin;
+}
+
+.aboutmyself .intro-text {
+  font-size: 1.2rem;
+  color: #c2c2c2;
+  width: 40vw;
 }
 
 .aboutmyself > .left {
@@ -193,8 +198,15 @@ a.active {
   align-items: center;
   justify-content: center;
 }
+
 .aboutmyself > .right > img {
   width: 70%;
+  border: 2px solid var(--accentcolor);
+  border-radius: 50%;
+  border-style: dotted;
+  padding: 7px;
+  outline: 2px solid var(--accentcolor);
+  outline-offset: -6px;
 }
 
 .name {
@@ -234,8 +246,15 @@ a.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
+  width: 60vw;
   margin: auto;
+}
+.experience-area .viewmore {
+  margin-top: 30px;
+  background: none;
+  color: var(--accentcolor);
+  border: none;
+  text-decoration: underline;
 }
 .experience-area h1 {
   text-align: center;
@@ -260,11 +279,16 @@ a.active {
   content: "";
   display: inline-block;
   border-radius: 50%;
-  background-color: var(--accentcolor);
-  color: var(--accentcolor);
+  background-color: white;
+  color: white;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   top: 50%;
+}
+
+.experience .ladder.active::after {
+  background-color: var(--accentcolor);
+  color: var(--accentcolor);
 }
 
 .experience .ladder::before {
@@ -275,11 +299,15 @@ a.active {
 
   display: inline-block;
   border-radius: 50%;
-  border: 2px solid var(--accentcolor);
+  border: 2px solid white;
   background: none;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   top: 50%;
+}
+
+.experience .ladder.active::before {
+  border: 2px solid var(--accentcolor);
 }
 
 .experience .details {
@@ -312,9 +340,9 @@ a.active {
 }
 
 .experience .description li {
-  list-style: none;
+  list-style: circle;
   font-family: var(--defaultfont);
-  padding-left: 20px;
+  margin-left: 30px;
   font-size: 0.85rem;
   margin-bottom: 9px;
 }
@@ -399,7 +427,7 @@ h2#showh2 {
 }
 
 .about {
-  height: 65vh;
+  /* height: 65vh; */
   display: flex;
   /* align-items: center; */
   padding: 0 15vmin 0 20vmin;
@@ -412,7 +440,7 @@ h2#showh2 {
 .skillset {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 75%;
 }
 .skillset > div {
@@ -555,6 +583,7 @@ footer > .footeritems {
     font-size: 15px;
     display: flex;
     flex-direction: column;
+    padding-right: 0;
     /* border: 1px solid white; */
   }
   .nav-bar > ul > li > a > i {
@@ -583,9 +612,13 @@ footer > .footeritems {
   }
   .aboutmyself {
     flex-direction: column-reverse;
-    height: 75vh;
+    height: 78vh;
     padding: 0;
     justify-content: center;
+  }
+  .aboutmyself .intro-text {
+    font-size: 0.9rem;
+    width: 90vw;
   }
   .phone {
     display: unset;
@@ -606,6 +639,7 @@ footer > .footeritems {
   }
 
   .experience-area {
+    width: 85vw;
     flex-direction: column;
   }
 

@@ -3,13 +3,28 @@ import { randomNumber } from "../Utility/keyGenerator";
 const skills = [
   {
     Name: "Frontend Development",
-    skillSet: ["React", "Typescript", "Bootstrap", "Figma", "Html & CSS"],
+    skillSet: [
+      "React",
+      "NextJs",
+      "Typescript",
+      "Bootstrap",
+      "Figma",
+      "Html & CSS",
+    ],
   },
   {
     Name: "Backend Development",
-    skillSet: [".Net", "NodeJs", "ExpressJs", "MongoDB", "MySQL", "SQLServer"],
+    skillSet: [
+      ".Net",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "MySQL",
+      "SQLServer",
+      "Kafka",
+    ],
   },
-  { Name: "Other Skills", skillSet: ["Git & Github", "Illustrator"] },
+  { Name: "Other Skills", skillSet: ["Git & Github", "Adobe Illustrator"] },
 ];
 const About = () => {
   return (
@@ -19,14 +34,15 @@ const About = () => {
       </div>
       {/* <h1>About me</h1> */}
       <div className="about">
-        <h1>
+        {/* <h1>
           Hey! myself, Utkarsh, a <br></br>Full-stack Developer with a passion
           for thoughtful UI. When I'm not writing code, you'll find me eating,
           scrolling or working out.
-        </h1>
+        </h1> */}
 
         <div className="skillset">
-          <h2>skills</h2>
+          <h1>Skills</h1>
+          <br />
           {skills?.map((skill, index) => {
             return (
               <div>
@@ -48,8 +64,9 @@ const About = () => {
           <li>
             <h2>Current Interests</h2>
           </li>
-          <li>UX</li>
-          <li>React</li>
+          <li>Movies,</li>
+          <li>Swimming,</li>
+          <li>Doodling,</li>
           <li>Blogging</li>
         </ul>
       </div>

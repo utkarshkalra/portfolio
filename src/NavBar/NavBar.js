@@ -1,5 +1,6 @@
 import { AiFillHome, AiFillInfoCircle } from "react-icons/ai";
 import { RiContactsFill } from "react-icons/ri";
+import { MdOutlineWorkHistory } from "react-icons/md";
 import { FaPen } from "react-icons/fa";
 import { useState } from "react";
 import logo from "./utkarsh.svg";
@@ -29,7 +30,7 @@ const NavBar = () => {
           </a>
         </li>
 
-        <li>
+        {/* <li>
           <a
             href="/#about"
             onClick={() => setLinkNumber(2)}
@@ -39,6 +40,18 @@ const NavBar = () => {
               <AiFillInfoCircle />
             </i>
             ABOUT
+          </a>
+        </li> */}
+        <li style={{ padding: "0 20px 0 0" }}>
+          <a
+            href="#experience"
+            className={linkNumber === 2 ? "active" : "notactive"}
+            onClick={() => setLinkNumber(2)}
+          >
+            <i className={linkNumber === 2 ? "activei" : "notactive"}>
+              <MdOutlineWorkHistory />
+            </i>
+            EXPERIENCE
           </a>
         </li>
         <li>
@@ -53,6 +66,7 @@ const NavBar = () => {
             CONTACT
           </a>
         </li>
+
         <li>
           <a
             rel="noopener noreferrer"
