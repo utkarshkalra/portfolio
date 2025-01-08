@@ -6,15 +6,9 @@ const AboutMyself = () => {
           Hello, I'm <br className="phone" />
           <span className="name">Utkarsh</span>,<br />
           <p className="intro-text">
-            <br />
-            Professionally, I am a Full-stack Developer with extensive
-            experience in crafting complex UIs, architecting robust APIs, and
-            elevating user experiences. Proficient in technologies such as
-            React, Next.js, SQL Server, .NET Core, and .NET Framework.
-            <br />
-            <br />
-            Outside of work, I have a passion for fitness, traveling, dancing,
-            doodling, and indulging in delicious cuisine.
+            Full-Stack Developer skilled in React, Next.js, .NET, and SQL,
+            crafting seamless experiences. Fitness enthusiast, traveler, dancer,
+            doodler, and food lover!
           </p>
         </h1>
       </div>

@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footeritem">
           <h2>Copyright</h2>
           <ul>
-            <li>© 2023 Utkarsh Kalra</li>
+            <li>© 2025 Utkarsh Kalra</li>
           </ul>
         </div>
         <div className="footeritem">

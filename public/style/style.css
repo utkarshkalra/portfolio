@@ -20,7 +20,7 @@ body {
   height: auto;
   margin: 0%;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   color: var(--color1);
 
   background-color: var(--color2);
@@ -216,6 +216,7 @@ a.active {
   color: var(--accentcolor);
   margin: unset;
   padding: unset;
+  margin-bottom: 15px;
 }
 
 .down-btn {
@@ -617,7 +618,7 @@ footer > .footeritems {
     justify-content: center;
   }
   .aboutmyself .intro-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 90vw;
   }
   .phone {
