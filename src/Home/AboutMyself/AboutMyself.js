@@ -6,9 +6,9 @@ const AboutMyself = () => {
           Hello, I'm <br className="phone" />
           <span className="name">Utkarsh</span>,<br />
           <p className="intro-text">
-            Full-Stack Developer skilled in React, Next.js, .NET, and SQL.
+            Full-Stack Developer skilled in MERN stack, Next.js, .Net and SQL.
             Except for that I am a fitness enthusiast, traveller, dancer,
-            doodler, and food lover!
+            doodler, and a big time foodie!
           </p>
         </h1>
       </div>
